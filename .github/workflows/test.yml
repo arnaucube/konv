@@ -1,0 +1,14 @@
+name: Test
+on: [push, pull_request]
+env:
+  CARGO_TERM_COLOR: always
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Build
+      run: cargo build --verbose
+    - name: Run tests
+      run: |
+        cargo run 21888242871839275222246405745257275088696311157297823662689037894645226208583

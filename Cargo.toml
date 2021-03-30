@@ -1,0 +1,14 @@
+[package]
+name = "konv"
+version = "0.0.1"
+authors = ["arnaucube <root@arnaucube.com>"]
+edition = "2018"
+
+[dependencies]
+clap = "3.0.0-beta.2"
+num = "0.2.0"
+num-bigint = {version = "0.2.2", features = ["rand"]}
+num-traits = "0.2.8"
+hex = "0.4.2"
+termion = "1.5.5"
+base64 = "0.13.0"
